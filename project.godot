@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "DungeonCreator",
+"language": "GDScript",
+"path": "res://DungeonGenerator/Model/DungeonCreator.gd"
+}, {
+"base": "Reference",
+"class": "DungeonData",
+"language": "GDScript",
+"path": "res://DungeonGenerator/Model/DungeonData.gd"
+}, {
+"base": "Reference",
+"class": "DungeonGenerator",
+"language": "GDScript",
+"path": "res://DungeonGenerator/Model/DungeonGenerator.gd"
+}, {
+"base": "Reference",
+"class": "DungeonPlacer",
+"language": "GDScript",
+"path": "res://DungeonGenerator/DungeonPlacer.gd"
+} ]
+_global_script_class_icons={
+"DungeonCreator": "",
+"DungeonData": "",
+"DungeonGenerator": "",
+"DungeonPlacer": ""
+}
+
+[application]
+
+config/name="DungeonGenerator"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
